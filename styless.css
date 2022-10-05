@@ -1,0 +1,84 @@
+html{
+    background: url("https://img.freepik.com/vector-gratis/fondo-abstracto-blanco_23-2148833155.jpg?w=2000");
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: green;
+    position: relative;
+    left: 46%;
+    bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+   
+}
+
+button:hover{
+    background-color: red;
+    cursor: pointer;
+    transform: scale(.9);
+    transition-duration: 1s;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "a b c"
+    "d e f"
+    "g h i";
+    justify-content: center;
+    align-items: center;
+}
+
+.grid div{
+    height: 180px;
+    width: 180px;
+    font-size: 80px;
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nombre{
+    font-size: 11px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+/*MEDIA SCREEN START*/
+
+@media (max-width: 583px){
+    .grid div{
+        width: 100px;
+        height: 100px;
+    }
+    button{
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 312px){
+    .grid div{
+        width: 60px;
+        height: 60px;
+    }
+    button{
+        font-size: 12px;
+        left: 40%;
+    }
+}
+
+/*MEDIA SCREEN END*/
